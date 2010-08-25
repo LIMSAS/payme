@@ -43,7 +43,7 @@
         <dd>
             <ul>
                 
-                <li><a href="#method-i-exec">exec</a></li>
+                <li><a href="#M000017">exec</a></li>
                 
             </ul>
         </dd>
@@ -52,7 +52,7 @@
         <dd>
             <ul>
                 
-                <li><a href="#method-c-included">included</a></li>
+                <li><a href="#M000015">included</a></li>
                 
             </ul>
         </dd>
@@ -61,7 +61,7 @@
         <dd>
             <ul>
                 
-                <li><a href="#method-i-launch">launch</a></li>
+                <li><a href="#M000016">launch</a></li>
                 
             </ul>
         </dd>
@@ -83,9 +83,9 @@
             <div class="sectiontitle">Class Public methods</div>
             
             <div class="method">
-                <div class="title" id="method-c-included">
+                <div class="title" id="M000015">
                     
-                    <a name="method-c-included"></a><b>included</b>(klass)
+                    <a name="M000015"></a><b>included</b>(klass)
                     
                 </div>
                 
@@ -94,38 +94,38 @@
                 
                 <div class="sourcecode">
                     <p class="source-link">
-                        Source: <a href="javascript:toggleSource('method-c-included_source')" id="l_method-c-included_source">show</a>
+                        Source: <a href="javascript:toggleSource('M000015_source')" id="l_M000015_source">show</a>
                         
-                        | <a href="http://github.com/LIMSAS/payme/blob/d0d01e27e49fff962e84984cc44b6b491ccde383/lib/payme/request/binary.rb#L3" target="_blank" class="github_url">on GitHub</a>
+                        | <a href="http://github.com/LIMSAS/payme/blob/cc3c503d07801272c8e71705dc9d3cd931038024/lib/payme/request/binary.rb#L4" target="_blank" class="github_url">on GitHub</a>
                         
                     </p>
-                    <div id="method-c-included_source" class="dyn-source">
-                        <pre>    <span class="ruby-comment cmt"># File lib/payme/request/binary.rb, line 3</span>
- 3:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">included</span>(<span class="ruby-identifier">klass</span>)
- 4:       <span class="ruby-identifier">klass</span>.<span class="ruby-identifier">class_eval</span> <span class="ruby-keyword kw">do</span>
- 5:         
- 6:         <span class="ruby-comment cmt">#</span>
- 7:         <span class="ruby-comment cmt"># Executes the binary call, gets the datas</span>
- 8:         <span class="ruby-comment cmt"># Validates that the the code is correct</span>
- 9:         <span class="ruby-comment cmt"># And returns the form</span>
-10:         <span class="ruby-comment cmt">#</span>
-11:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">launch</span>
-12:           <span class="ruby-identifier">result</span> = <span class="ruby-identifier">exec</span>.<span class="ruby-identifier">split</span>(<span class="ruby-value str">'!'</span>)
-13:           
-14:           <span class="ruby-identifier">raise</span> <span class="ruby-constant">Payme</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">MissingPath</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">result</span>.<span class="ruby-identifier">empty?</span> <span class="ruby-keyword kw">or</span> (<span class="ruby-identifier">result</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">empty?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">result</span>[<span class="ruby-value">2</span>].<span class="ruby-identifier">empty?</span>)
-15:           <span class="ruby-identifier">result</span>
-16:         <span class="ruby-keyword kw">end</span>
-17:         
-18:         <span class="ruby-identifier">private</span>
-19:         <span class="ruby-comment cmt">#</span>
-20:         <span class="ruby-comment cmt"># Executes the binary call</span>
-21:         <span class="ruby-comment cmt">#</span>
-22:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">exec</span>
-23:           <span class="ruby-identifier">path</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-identifier">options</span>[<span class="ruby-value">:bin_path</span>], <span class="ruby-value str">'request'</span>)
-24:           <span class="ruby-node">`#{path} #{parse_params}`</span>
-25:         <span class="ruby-keyword kw">end</span>
-26:       <span class="ruby-keyword kw">end</span>
-27:     <span class="ruby-keyword kw">end</span></pre>
+                    <div id="M000015_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/payme/request/binary.rb, line 4</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">included</span>(<span class="ruby-identifier">klass</span>)
+      <span class="ruby-identifier">klass</span>.<span class="ruby-identifier">class_eval</span> <span class="ruby-keyword kw">do</span>
+        
+        <span class="ruby-comment cmt">#</span>
+        <span class="ruby-comment cmt"># Executes the binary call, gets the datas</span>
+        <span class="ruby-comment cmt"># Validates that the the code is correct</span>
+        <span class="ruby-comment cmt"># And returns the form</span>
+        <span class="ruby-comment cmt">#</span>
+        <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">launch</span>
+          <span class="ruby-identifier">result</span> = <span class="ruby-identifier">exec</span>.<span class="ruby-identifier">split</span>(<span class="ruby-value str">'!'</span>)
+          
+          <span class="ruby-identifier">raise</span> <span class="ruby-constant">Payme</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">MissingPath</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">result</span>.<span class="ruby-identifier">empty?</span> <span class="ruby-keyword kw">or</span> (<span class="ruby-identifier">result</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">empty?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">result</span>[<span class="ruby-value">2</span>].<span class="ruby-identifier">empty?</span>)
+          <span class="ruby-identifier">result</span>
+        <span class="ruby-keyword kw">end</span>
+        
+        <span class="ruby-identifier">private</span>
+        <span class="ruby-comment cmt">#</span>
+        <span class="ruby-comment cmt"># Executes the binary call</span>
+        <span class="ruby-comment cmt">#</span>
+        <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">exec</span>
+          <span class="ruby-identifier">path</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-identifier">options</span>[<span class="ruby-identifier">:bin_path</span>], <span class="ruby-value str">'request'</span>)
+          <span class="ruby-node">`#{path} #{parse_params}`</span>
+        <span class="ruby-keyword kw">end</span>
+      <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">end</span></pre>
                     </div>
                 </div>
                 
@@ -134,9 +134,9 @@
             <div class="sectiontitle">Instance Public methods</div>
             
             <div class="method">
-                <div class="title" id="method-i-exec">
+                <div class="title" id="M000017">
                     
-                    <a name="method-i-exec"></a><b>exec</b>()
+                    <a name="M000017"></a><b>exec</b>()
                     
                 </div>
                 
@@ -152,26 +152,26 @@ Executes the binary call
                 
                 <div class="sourcecode">
                     <p class="source-link">
-                        Source: <a href="javascript:toggleSource('method-i-exec_source')" id="l_method-i-exec_source">show</a>
+                        Source: <a href="javascript:toggleSource('M000017_source')" id="l_M000017_source">show</a>
                         
-                        | <a href="http://github.com/LIMSAS/payme/blob/d0d01e27e49fff962e84984cc44b6b491ccde383/lib/payme/request/binary.rb#L22" target="_blank" class="github_url">on GitHub</a>
+                        | <a href="http://github.com/LIMSAS/payme/blob/cc3c503d07801272c8e71705dc9d3cd931038024/lib/payme/request/binary.rb#L23" target="_blank" class="github_url">on GitHub</a>
                         
                     </p>
-                    <div id="method-i-exec_source" class="dyn-source">
-                        <pre>    <span class="ruby-comment cmt"># File lib/payme/request/binary.rb, line 22</span>
-22:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">exec</span>
-23:           <span class="ruby-identifier">path</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-identifier">options</span>[<span class="ruby-value">:bin_path</span>], <span class="ruby-value str">'request'</span>)
-24:           <span class="ruby-node">`#{path} #{parse_params}`</span>
-25:         <span class="ruby-keyword kw">end</span></pre>
+                    <div id="M000017_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/payme/request/binary.rb, line 23</span>
+        <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">exec</span>
+          <span class="ruby-identifier">path</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-identifier">options</span>[<span class="ruby-identifier">:bin_path</span>], <span class="ruby-value str">'request'</span>)
+          <span class="ruby-node">`#{path} #{parse_params}`</span>
+        <span class="ruby-keyword kw">end</span></pre>
                     </div>
                 </div>
                 
             </div>
             
             <div class="method">
-                <div class="title" id="method-i-launch">
+                <div class="title" id="M000016">
                     
-                    <a name="method-i-launch"></a><b>launch</b>()
+                    <a name="M000016"></a><b>launch</b>()
                     
                 </div>
                 
@@ -188,19 +188,19 @@ correct And returns the form
                 
                 <div class="sourcecode">
                     <p class="source-link">
-                        Source: <a href="javascript:toggleSource('method-i-launch_source')" id="l_method-i-launch_source">show</a>
+                        Source: <a href="javascript:toggleSource('M000016_source')" id="l_M000016_source">show</a>
                         
-                        | <a href="http://github.com/LIMSAS/payme/blob/d0d01e27e49fff962e84984cc44b6b491ccde383/lib/payme/request/binary.rb#L11" target="_blank" class="github_url">on GitHub</a>
+                        | <a href="http://github.com/LIMSAS/payme/blob/cc3c503d07801272c8e71705dc9d3cd931038024/lib/payme/request/binary.rb#L12" target="_blank" class="github_url">on GitHub</a>
                         
                     </p>
-                    <div id="method-i-launch_source" class="dyn-source">
-                        <pre>    <span class="ruby-comment cmt"># File lib/payme/request/binary.rb, line 11</span>
-11:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">launch</span>
-12:           <span class="ruby-identifier">result</span> = <span class="ruby-identifier">exec</span>.<span class="ruby-identifier">split</span>(<span class="ruby-value str">'!'</span>)
-13:           
-14:           <span class="ruby-identifier">raise</span> <span class="ruby-constant">Payme</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">MissingPath</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">result</span>.<span class="ruby-identifier">empty?</span> <span class="ruby-keyword kw">or</span> (<span class="ruby-identifier">result</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">empty?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">result</span>[<span class="ruby-value">2</span>].<span class="ruby-identifier">empty?</span>)
-15:           <span class="ruby-identifier">result</span>
-16:         <span class="ruby-keyword kw">end</span></pre>
+                    <div id="M000016_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/payme/request/binary.rb, line 12</span>
+        <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">launch</span>
+          <span class="ruby-identifier">result</span> = <span class="ruby-identifier">exec</span>.<span class="ruby-identifier">split</span>(<span class="ruby-value str">'!'</span>)
+          
+          <span class="ruby-identifier">raise</span> <span class="ruby-constant">Payme</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">MissingPath</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">result</span>.<span class="ruby-identifier">empty?</span> <span class="ruby-keyword kw">or</span> (<span class="ruby-identifier">result</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">empty?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">result</span>[<span class="ruby-value">2</span>].<span class="ruby-identifier">empty?</span>)
+          <span class="ruby-identifier">result</span>
+        <span class="ruby-keyword kw">end</span></pre>
                     </div>
                 </div>
                 

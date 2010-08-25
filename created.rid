@@ -1,11 +1,1 @@
-Wed, 07 Jul 2010 10:03:39 +0200
-lib/payme/request/params.rb	Fri, 02 Jul 2010 10:36:25 +0200
-LICENSE	Wed, 07 Jul 2010 10:01:55 +0200
-lib/payme/errors.rb	Wed, 07 Jul 2010 10:01:55 +0200
-README.md	Fri, 02 Jul 2010 10:36:25 +0200
-lib/payme/request/binary.rb	Wed, 07 Jul 2010 10:01:55 +0200
-lib/payme/response.rb	Fri, 02 Jul 2010 10:36:25 +0200
-lib/payme/config.rb	Wed, 07 Jul 2010 10:01:55 +0200
-lib/payme/response/binary.rb	Wed, 07 Jul 2010 10:01:55 +0200
-lib/payme/request.rb	Fri, 02 Jul 2010 10:36:25 +0200
-lib/payme.rb	Wed, 07 Jul 2010 10:01:55 +0200
+Wed, 25 Aug 2010 17:59:40 +0200
